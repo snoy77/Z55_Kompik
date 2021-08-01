@@ -7,6 +7,7 @@ using System.Speech.Synthesis;
 
 namespace Z55_V3_WPF
 {
+    //Мдуль инструмент воспроизводит речь компьютером.
     public class Speaker
     {
         SpeechSynthesizer speechSynthesizer { get; set; }

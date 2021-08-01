@@ -58,6 +58,7 @@
     </ApplicationDefinition>
     <Compile Include="ComandModule\ComandModuleInterface.cs" />
     <Compile Include="instrumentalModule\Speacer.cs" />
+    <Compile Include="MainModule.cs" />
     <Compile Include="TimeModule.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
