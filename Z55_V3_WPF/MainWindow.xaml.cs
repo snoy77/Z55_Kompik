@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Speech.Synthesis;
 
+using Z55_V3_DLL;
+
 namespace Z55_V3_WPF
 {
     /// <summary>

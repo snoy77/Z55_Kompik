@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Speech.Synthesis;
 
-namespace Z55_V3_WPF
+namespace Z55_V3_DLL
 {
     //Мдуль инструмент воспроизводит речь компьютером.
     public static class Speaker

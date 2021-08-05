@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z55_V3_WPF", "Z55_V3_WPF\Z55_V3_WPF.csproj", "{A6DCCB67-2204-478B-ACCB-9A03A4EFEF06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z55_V3_DLL", "Z55_V3_DLL\Z55_V3_DLL.csproj", "{FD6E1135-57ED-4ABF-9170-25031F82D384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z55_V3_Forms", "Z55_V3_Forms\Z55_V3_Forms.csproj", "{E0459ABF-FEC5-4AE0-A015-BE1A86F022D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A6DCCB67-2204-478B-ACCB-9A03A4EFEF06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6DCCB67-2204-478B-ACCB-9A03A4EFEF06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6DCCB67-2204-478B-ACCB-9A03A4EFEF06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD6E1135-57ED-4ABF-9170-25031F82D384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6E1135-57ED-4ABF-9170-25031F82D384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6E1135-57ED-4ABF-9170-25031F82D384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6E1135-57ED-4ABF-9170-25031F82D384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0459ABF-FEC5-4AE0-A015-BE1A86F022D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0459ABF-FEC5-4AE0-A015-BE1A86F022D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0459ABF-FEC5-4AE0-A015-BE1A86F022D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0459ABF-FEC5-4AE0-A015-BE1A86F022D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

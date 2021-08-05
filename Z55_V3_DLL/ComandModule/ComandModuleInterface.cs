@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Z55_V3_WPF
+namespace Z55_V3_DLL
 {
     public abstract class ComandModuleInterface
     {
