@@ -32,11 +32,13 @@ namespace Z55_V3_Forms
         {
             string message = textBox_timerModuleMessage.Text;
 
-            int[] dates = textBox_timerModuleDatetime.Text.Split(' ').Select(x => int.Parse(x)).ToArray();
-            DateTime dateTime = new DateTime(dates[0], dates[1], dates[2], dates[3], dates[4], dates[5]);
-            
-            mainModule.timerModule.notes.Add(new Note(dateTime, message));
+            mainModule.timerModule.notes.Add(new Note(dateTimePicker1.Value, message));
             Speaker.speakText("Напоминание добавлено");
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            mainModule.timerModule.StopWork();
         }
     }
 }
