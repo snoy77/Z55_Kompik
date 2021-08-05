@@ -21,19 +21,28 @@ namespace Z55_V3_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        public Speaker speacer;
+        MainModule MainModule = new MainModule();
         
         public MainWindow()
         {
             InitializeComponent();
-            speacer = new Speaker();
-            speacer.speakText("Раз, два, три... Голосовой модуль подключён.");
+            Speaker.speakText("Компик включился.");
         }
 
         private void button_botTestSpeakStart_Click(object sender, RoutedEventArgs e)
         {
             string text = textBox_botTestSpeakText.Text;
-            speacer.speakText(text);
+            Speaker.speakText(text);
+        }
+
+        private void button_TimerModuleStart_Click(object sender, RoutedEventArgs e)
+        {
+            MainModule.timerModule.StartWork();
+            Speaker.speakText("Запущен модуль-таймер");
+        }
+
+        private void button_TimerModuleAdd4_Click(object sender, RoutedEventArgs e)
+        {
         }
     }
 }

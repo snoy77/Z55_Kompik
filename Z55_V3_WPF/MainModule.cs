@@ -4,20 +4,47 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Threading;
+
 namespace Z55_V3_WPF
 {
-    //Главный модуль бота
     public class MainModule
     {
-        //Натсройки главного модуля
-        public bool botVoiceNeed = true;
+        //Системные модули
+        public TimerModule timerModule;
 
-        //Модули-инструменты
-        public Speaker speaker;
-
-        public MainModule(bool botVoiceNeed)
+        public MainModule()
         {
-            this.botVoiceNeed = botVoiceNeed;
+            this.timerModule = new TimerModule();
+        }
+
+        public void StartAllModule()
+        {
+            timerModule.StartWork();
+        }
+    }
+    public class TimerModule
+    {
+        //Поток для рабочего метода модуля
+        static Thread a = new Thread(new ThreadStart(DoWork));
+
+        
+        public  void StartWork()
+        {
+            a.Start();
+        }
+        public void StopWork()
+        {
+            a.Abort();
+        }
+
+        //Метод описывающий логику иттераций модуля
+        private static void DoWork()
+        {
+            while (true)
+            {
+                Thread.Sleep(2000);
+            }
         }
     }
 }

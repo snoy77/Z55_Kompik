@@ -8,17 +8,16 @@ using System.Speech.Synthesis;
 namespace Z55_V3_WPF
 {
     //Мдуль инструмент воспроизводит речь компьютером.
-    public class Speaker
+    public static class Speaker
     {
-        SpeechSynthesizer speechSynthesizer { get; set; }
+        public static SpeechSynthesizer speechSynthesizer = new SpeechSynthesizer();
 
-        public Speaker()
-        {
-            speechSynthesizer = new SpeechSynthesizer();
-        }
-        public void speakText(string text)
+        public static void speakText(string text)
         {
             speechSynthesizer.SpeakAsync(text);
         }
     }
+
+    //Переделал модули-инструменты в статичные классы, чтобы их можно было использовать во всех командных модулях 
+    //без объявления копий объектов
 }
