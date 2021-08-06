@@ -38,10 +38,18 @@ namespace Z55_V3_DLL
             this.message = message;
         }
 
+        //Проверка времени на соответствие для выполнения задачи объекта.
         public bool checkTime()
         {
             return DateTime.Now.ToString() == this.dateTime.ToString();
         }
+        //Выполняется при соответсветствии времени срабатывания (не при напоминании)
+        public void DoTask()
+        {
+            this.sendMessage();
+        }
+
+        //Просто посылает сообщение пользователю настроенным путём. (на данный момент только голосовое)
         public void sendMessage()
         {
             Speaker.speakText(this.message);
@@ -74,7 +82,7 @@ namespace Z55_V3_DLL
                 {
                     if (notes[i].checkTime())
                     {
-                        notes[i].sendMessage();
+                        notes[i].DoTask();
                     }
                 }
             }
